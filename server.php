@@ -30,5 +30,5 @@
     //     $data[] = $row;
     // }
     // echo json_encode(array('status' => true, 'data' => $data));
-?>
+?
 
