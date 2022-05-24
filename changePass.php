@@ -1,11 +1,11 @@
 <?php
     include './connect.php';
-    if (isset($_SESSION['username'])==false)
+    if (!isset($_SESSION['usr']))
     {
         header('Location: ./login.php');
         exit();
     }
-    $username=$_SESSION['username'];
+    $username=$_SESSION['usr'];
     $err=[];
     if (isset($_POST['btndoimatkhau'])==true)
     {
